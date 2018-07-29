@@ -33,3 +33,14 @@ Après tant de miles parcourus, vous décidez de camper. Il vous faut désormais
 > Entrée => Nombre décimal représentant une température en degrés Celcius : 42
 
 > Sortie => Nombre avec 1 chiffre après la virgule représentant une température en degrés Farenheit : 107.6
+
+```c
+#include <stdio.h>
+
+int main(){
+    double celsius;
+    scanf("%lf", &celsius);
+    printf("%.1lf" , celsius* 9.0/5.0 + 32.0);
+    return 0;
+}
+```
