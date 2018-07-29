@@ -142,6 +142,21 @@ Votre programme devra lire un nombre décimal, la quantité de ciment nécessair
 > Sortie => Votre programme devra afficher le coût total du ciment : 135
 
 ```c
+#include <stdio.h>
 
-
+int main(){
+    double kg = 0.0;
+    double sac = 60.0;
+    int prix = 45;
+    int prixTot = 0;
+    
+    scanf("%lf", &kg);
+    
+    for(int i=0; i< kg/sac; i++){
+        prixTot += prix;
+    }
+    
+    printf("%d", prixTot);
+    return 0;
+}
 ```
