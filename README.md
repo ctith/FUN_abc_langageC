@@ -25,7 +25,7 @@ int main(){
 
 ## S2.3 - Divisions
 
-### 1. Votre mission division
+### 1. Votre mission : les températures
 Après tant de miles parcourus, vous décidez de camper. Il vous faut désormais dîner, mais votre réchaud électrique n'est réglable qu'en degrés Fahrenheit ! Il vous faut donc convertir les températures des degrés Celsius vers les degrés Fahrenheit.
 
 Écrivez un programme qui lit un nombre décimal (un nombre à virgule) représentant une température en degrés Celcius et affiche la température en degrés Fahrenheit avec 1 chiffre après la virgule. Temperature(°F) = Temperature(°C) × 9.0/5.0 + 32.0
@@ -44,7 +44,7 @@ int main(){
     return 0;
 }
 ```
-### 2. Votre mission modulo
+### 2. Votre mission : ranger des allumettes
 Vous avez des allumettes que vous voulez répartir par boîtes. Créez un programme qui calcule combien de boîtes complètement pleines il y aura. Ce programme devra aussi afficher le nombre d'allumettes restantes (ne remplissant pas totalement la dernière boîte).
 
 > Entrée => Votre programme lira dans l’entrée le nombre d’allumettes et la capacité d’une boîte (nombre d’allumettes pour la remplir complètement).
@@ -70,4 +70,59 @@ int main(){
 }
 ```
 
-## S2.4 - 
+## S2.4 - Conversion
+
+### 1. Votre mission : calcul de moyenne
+Un professeur a tellement de classes qu'il passe trop de temps à calculer les moyennes de ses élèves. Pour l'aider, vous allez devoir écrire un programme qui calcule les moyennes à partir des notes données.
+
+> Entrée => Votre programme doit d'abord lire un premier entier, qui décrit le nombre de notes obtenues. Ensuite, il doit lire chacune de ces notes, qui sont également des nombres entiers.
+4
+10
+8
+16
+9
+
+> Sortie => Votre programme devra afficher la moyenne avec 2 chiffres après la virgule.
+
+10.75
+
+```c
+
+
+```
+
+### 2. Votre mission : 
+
+
+> Entrée => 
+
+> Sortie => 
+
+```c
+
+
+```
+
+### 3. Votre mission : 
+
+
+> Entrée => 
+
+> Sortie => 
+
+```c
+
+
+```
+
+### 4. Votre mission : 
+
+
+> Entrée => 
+
+> Sortie => 
+
+```c
+
+
+```
