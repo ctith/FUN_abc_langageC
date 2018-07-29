@@ -103,36 +103,43 @@ int main (){
 }
 ```
 
-### 2. Votre mission : 
+### 2. Votre mission : calcul de population
+Ces dernières années, la population de votre ville a très fortement augmenté, grâce à un fort taux de natalité. Cela pose cependant un certain nombre de problèmes, notamment une pénurie de logements ! Le maire a décidé de s'occuper du problème et souhaiterait estimer l'évolution future de la population.
 
+Votre programme devra lire un entier, la population actuelle de la ville, puis un nombre décimal, la croissance prévue de la population, en pourcentage. Il devra alors afficher la nouvelle population de la ville sous la forme d'un nombre entier. On considérera, par convention, qu'une population de 31,4 habitants signifie qu'il y a 31 habitants, on ne compte donc que les habitants « entiers » !
 
-> Entrée => 
+> Entrée => 456 -5.5
 
-> Sortie => 
-
-```c
-
-
-```
-
-### 3. Votre mission : 
-
-
-> Entrée => 
-
-> Sortie => 
+> Sortie => 430
 
 ```c
 
 
 ```
 
-### 4. Votre mission : 
+### 3. Votre mission : achat de livres
+Vous commencez à apprendre une nouvelle langue et décidez d'acheter quelques livres pour vous entraîner. Vous trouvez un vendeur qui propose de nombreux livres à des prix avantageux. Vous disposez d'une certaine somme d'argent et vous vous demandez combien de livres vous pouvez acheter, sachant qu'ils sont tous au même prix.
+
+Votre programme doit commencer par lire la somme d'argent dont vous disposez (nombre à virgule) et lira ensuite le prix d'un livre (nombre à virgule). Il devra ensuite afficher un entier, le plus grand nombre de livres qu'il vous est possible d'acheter avec cette somme d'argent.
+
+> Entrée => 48.0 3.50  
+
+> Sortie => 13
+
+```c
 
 
-> Entrée => 
+```
 
-> Sortie => 
+### 4. Votre mission : construction maison
+Pour la construction de votre nouvelle maison, vous avez calculé la quantité de ciment nécessaire pour construire les fondations. De nature économe, vous souhaitez acheter exactement la quantité nécessaire mais malheureusement le magasin ne vend le ciment qu'en gros sacs. Vous souhaitez calculer combien tout cela va vous coûter.
+
+Votre programme devra lire un nombre décimal, la quantité de ciment nécessaire pour les fondations de votre nouvelle maison, en kilos. Sachant que le ciment n'est vendu qu'en sacs de 60 kilos et qu’un sac coûte 45 euros, votre programme devra afficher le coût total du ciment.
+
+> Entrée => Votre programme devra lire un nombre décimal, la quantité de ciment nécessaire pour les fondations de votre nouvelle maison, en kilos : 145.8
+! On vous garantit que la quantité de ciment nécessaire ne sera JAMAIS un multiple de 60 (pour raison de simplification du programme)
+
+> Sortie => Votre programme devra afficher le coût total du ciment : 135
 
 ```c
 
