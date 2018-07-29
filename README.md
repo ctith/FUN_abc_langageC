@@ -170,3 +170,22 @@ int main(){
     return 0;
 }
 ```
+
+## S2.5 - les Tableaux
+
+## Votre mission : tableau et ingrédients
+Vous avez une superbe recette de cuisine avec 10 ingrédients. Mais vous ne vous souvenez jamais quelle quantité de chaque ingrédient il faut mettre pour réussir cette fameuse recette !
+
+Il y a 10 ingrédients dans la recette et les quantités nécessaires pour chacun sont données en entrée (en grammes).
+
+> Entrée => Votre programme doit lire 10 entiers (les quantités nécessaires pour chacun des ingrédients) et les stocker dans un tableau.
+Il doit ensuite lire un entier correspondant au numéro d'un ingrédient (compris entre 0 et 9)
+500 180 650 25 666 42 421 1 370 211
+3
+
+
+> Sortie => Votre programme doit afficher la quantité associée au numéro de l'ingrédient. Par exemple ici 3 correspondant à la case numérotée 3 du tableau (donc le quatrième ingrédient) : 25
+
+```c
+
+```
