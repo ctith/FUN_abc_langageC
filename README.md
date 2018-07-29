@@ -187,5 +187,20 @@ Il doit ensuite lire un entier correspondant au numéro d'un ingrédient (compri
 > Sortie => Votre programme doit afficher la quantité associée au numéro de l'ingrédient. Par exemple ici 3 correspondant à la case numérotée 3 du tableau (donc le quatrième ingrédient) : 25
 
 ```c
+#include <stdio.h>
 
+int main() {
+    int tableau[10];
+    int valeurLue = 0;
+    int numeroDeCase = 0;  
+
+    for(int i = 0 ; i < 10 ; i ++){
+        scanf("%d", &valeurLue);
+        tableau[numeroDeCase] = valeurLue;
+        numeroDeCase = numeroDeCase + 1;
+    }
+    scanf("%d",&numeroDeCase);
+    printf("%d", tableau[numeroDeCase]);
+    return 0;
+}
 ```
