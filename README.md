@@ -1,7 +1,7 @@
 # MOOC FUN : abc du langage C
 
 ## S1.3 - Boucles et répétitions
-
+```c
 +-----------------------+
 | o | X | o | X | o | X |
 | X | o | X | o | X | o |
@@ -10,7 +10,7 @@
 | o | X | o | X | o | X |
 | X | o | X | o | X | o |
 +-----------------------+
-
+```
 ```c
 #include <stdio.h>
 
@@ -61,7 +61,25 @@ int main()
 
 	return 0;
 }
-```		
+```	
+## S1.6 - Variables et boucles
+
+### Votre mission
+Votre camarade a beaucoup de mal avec les tables de multiplication, en particulier celle de 8! En effet, on sait tous que c'est la plus dure à mémoriser. Il vous a donc demandé de lui envoyer la table afin qu'il puisse l'apprendre correctement. Pour cela, vous décidez d'écrire un programme qui affiche les produits par 8 de 0 à 10.
+
+Afin d'accomplir cette tâche, et de réutiliser ce programme pour toutes les autres tables rapidement, vous utiliserez une boucle.
+```c	
+#include <stdio.h>
+
+int main(){
+    int nombre = 0;
+    for(int i=0 ; i<11 ; i++){
+        printf("%dx8 = %d\n",nombre,nombre*8);
+        nombre=nombre+1;
+    }
+    return 0;
+}
+```	
 
 ## S2.2 - Nombre à virgule
 ### Votre mission
