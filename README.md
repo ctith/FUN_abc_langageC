@@ -25,7 +25,7 @@ int main(){
 
 ## S2.3 - Divisions
 
-### Votre mission
+### 1. Votre mission division
 Après tant de miles parcourus, vous décidez de camper. Il vous faut désormais dîner, mais votre réchaud électrique n'est réglable qu'en degrés Fahrenheit ! Il vous faut donc convertir les températures des degrés Celsius vers les degrés Fahrenheit.
 
 Écrivez un programme qui lit un nombre décimal (un nombre à virgule) représentant une température en degrés Celcius et affiche la température en degrés Fahrenheit avec 1 chiffre après la virgule. Temperature(°F) = Temperature(°C) × 9.0/5.0 + 32.0
@@ -44,3 +44,18 @@ int main(){
     return 0;
 }
 ```
+### 2. Votre mission modulo
+Vous avez des allumettes que vous voulez répartir par boîtes. Créez un programme qui calcule combien de boîtes complètement pleines il y aura. Ce programme devra aussi afficher le nombre d'allumettes restantes (ne remplissant pas totalement la dernière boîte).
+
+> Entrée => Votre programme lira dans l’entrée le nombre d’allumettes et la capacité d’une boîte (nombre d’allumettes pour la remplir complètement).
+666
+13
+
+> Sortie => Il affichera le nombre de boites pleines et le nombres d’allumettes restantes.
+51
+3
+
+```c
+```
+
+## S2.4 - 
