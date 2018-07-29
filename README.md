@@ -88,20 +88,17 @@ Un professeur a tellement de classes qu'il passe trop de temps à calculer les m
 
 ```c
 #include <stdio.h>
+int main (){
+    int nbNote, note;
+    int somme = 0;
 
-int main() {
-    int nbNotes, note;
-    int noteTotal = 0;
-    
-    nbNotes = scanf("%d", &nbNotes);
-   
-    for (int i=0; i < nbNotes; i++){
-        noteTotal += scanf("%d", &note);
+    scanf("%d", &nbNote);
+    for(int i = 0; i < nbNote ; i++) {
+        scanf("%d", &note);
+        somme = somme + note;
     }
-    
-    double noteVirgule =  (double) noteTotal;
-    printf("%.2lf", noteVirgule / nbNotes);
-
+    double sommeVirgule = (double)somme;
+    printf ("%.2lf", sommeVirgule/nbNote);
     return 0;
 }
 ```
