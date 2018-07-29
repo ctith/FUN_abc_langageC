@@ -127,8 +127,18 @@ Votre programme doit commencer par lire la somme d'argent dont vous disposez (no
 > Sortie => 13
 
 ```c
+#include <stdio.h>
 
-
+int main(){
+    double argent, prixLivre;
+    int nbLivre;
+    scanf("%lf %lf", &argent, &prixLivre);
+    
+    nbLivre = (int) argent / prixLivre;
+    printf("%d", nbLivre);
+    
+    return 0;
+}
 ```
 
 ### 4. Votre mission : construction maison
