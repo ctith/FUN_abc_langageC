@@ -87,8 +87,23 @@ Un professeur a tellement de classes qu'il passe trop de temps à calculer les m
 10.75
 
 ```c
+#include <stdio.h>
 
+int main() {
+    int nbNotes, note;
+    int noteTotal = 0;
+    
+    nbNotes = scanf("%d", &nbNotes);
+   
+    for (int i=0; i < nbNotes; i++){
+        noteTotal += scanf("%d", &note);
+    }
+    
+    double noteVirgule =  (double) noteTotal;
+    printf("%.2lf", noteVirgule / nbNotes);
 
+    return 0;
+}
 ```
 
 ### 2. Votre mission : 
