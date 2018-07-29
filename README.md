@@ -1,5 +1,67 @@
 # MOOC FUN : abc du langage C
 
+## S1.3 - Boucles et répétitions
+
++-----------------------+
+| o | X | o | X | o | X |
+| X | o | X | o | X | o |
+| o | X | o | X | o | X |
+| X | o | X | o | X | o |
+| o | X | o | X | o | X |
+| X | o | X | o | X | o |
++-----------------------+
+
+```c
+#include <stdio.h>
+
+int main() {
+	printf("+");
+	for (int i = 0; i < 23; i++)
+		printf("-");
+	printf("+\n");
+
+	for (int i = 0; i < 3; i++){
+		printf("| o | X | o | X | o | X |");
+		printf("\n");
+		printf("| X | o | X | o | X | o |");
+		printf("\n");
+	}
+
+	printf("+");
+
+	for (int i = 0; i < 23; i++)
+		printf("-");
+	printf("+");
+	
+    return 0;
+}
+```
+
+## S1.5 - Calcul
+### Votre mission
+Vous travaillez pour le bureau international des procrastineurs. Ce bureau vous a demandé combien de temps il reste avant la journée de la procrastination (le 25 mars).
+
+La requête ayant été réalisée le 23 mars, nous vous invitons à leur offrir les formats d'affichage suivants :
+
+> Cher procrastineur,
+Il vous reste X jours, soit Y minutes donc Z secondes avant de pouvoir procrastiner !
+				
+Rappel : X est le nombre de jours restants, soit 25-23; Y est le nombre de minutes qu'il y a dans 25-23 jours, soit 60*24*(25-23) minutes, et Z est le nombre de secondes, soit 60*60*24*(25-23) secondes !
+
+Attention ! L'invitation précédente est en réalité une exigence importante, et nous vous demandons de la respecter méticuleusement. Le format doit donc absolument être respecté au caractère près.
+
+```c
+#include <stdio.h>
+int main()
+{
+	printf("Cher procrastineur,\n");
+	printf("Il vous reste %d jours, ", 25 - 23);
+	printf("soit %d minutes ", 2 * 24 * 60);
+	printf("donc %d secondes avant de pouvoir procrastiner !\n", 48 * 3600);
+
+	return 0;
+}
+```		
 
 ## S2.2 - Nombre à virgule
 ### Votre mission
