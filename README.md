@@ -92,6 +92,7 @@ On vous donne sur la première ligne le nombre de robots puis sur chaque ligne s
 La puissance de frappe d'un robot est définie comme étant :
 
 > (puissance_moteur+coefficient) * (poids - taille) 
+
 La puissance de frappe de tous les robots est la somme de la puissance de frappe de chacun des robots
 
 Voici un exemple de ce que votre programme doit faire :
