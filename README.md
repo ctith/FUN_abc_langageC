@@ -81,6 +81,52 @@ int main(){
 }
 ```	
 
+## S1.7 - lire les entrées du programme
+
+### Votre mission
+Voici enfin votre dernière activité de la semaine, profitez-en pour appliquer tout ce que vous avez appris correctement !
+Nous en avons désormais la confirmation, David a besoin d'aide, et vite. Il se trouve que Goliath est beaucoup plus imposant que David le pensait.
+Heureusement David n'est pas à court de ressources et il a prévu d'envoyer des robots combattre le géant. Mais avant de lancer l'assaut, il doit évaluer les performances de ces robots.
+
+On vous donne sur la première ligne le nombre de robots puis sur chaque ligne suivante la hauteur, le poids, la puissance des moteurs et un coefficient entier (1,2, ou 3) de résistance de chacun de ces robots, et vous devez calculer la puissance de frappe totale de ses robots.
+La puissance de frappe d'un robot est définie comme étant :
+
+> (puissance_moteur+coefficient) * (poids - taille) 
+La puissance de frappe de tous les robots est la somme de la puissance de frappe de chacun des robots
+
+Voici un exemple de ce que votre programme doit faire :
+
+Par exemple, si on vous donne l'entrée suivante :
+>2
+50 60 2 1
+43 62 5 2
+
+Vous devez afficher la sortie suivante :
+>163
+
+Qui correspond au calcul
+>(2+1)*(60-50) + (5+2)*(62-43)
+
+Vous devez utiliser une boucle pour lire chacune des lignes !
+Pour rappel, votre programme doit permettre à David de s'adapter à n'importe quelle armée qu'il donne en entrée, et pas seulement celle donnée en exemple
+
+```c
+#include <stdio.h>
+int main() {
+    int nbRobots;
+    int poids,taille,puissance,coeff;
+    int total = 0;
+
+    scanf("%d", &nbRobots);
+    for(int i=0 ; i < nbRobots ; i++){
+        scanf("%d %d %d %d",&taille,&poids,&puissance,&coeff);
+        total = total + (poids-taille)*(puissance+coeff);
+    }
+    printf("%d", total);
+    return 0;
+}
+```
+
 ## S2.2 - Nombre à virgule
 ### Votre mission
 Vous décidez de partir pour quelques jours de randonnée à la montagne avec un ami américain. Le problème est que toutes les distances indiquées sur les panneaux sont en kilomètres et non en miles (pour votre ami américain). Vous aimeriez être en mesure de faire les conversions automatiquement pour l'aider à se rendre compte des distances.
