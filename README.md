@@ -56,6 +56,18 @@ Vous avez des allumettes que vous voulez répartir par boîtes. Créez un progra
 3
 
 ```c
+#include <stdio.h>
+
+int main(){
+    int nbAllumette, capaciteBoite;
+    int nbBoitePleine = 0;
+    int nbAllumetteRestante = 0;
+    scanf("%d",&nbAllumette);
+    scanf("%d",&capaciteBoite);
+    printf("%d\n",nbBoitePleine = nbAllumette / capaciteBoite);
+    printf("%d",nbAllumetteRestante = nbAllumette % capaciteBoite);
+    return 0;
+}
 ```
 
 ## S2.4 - 
