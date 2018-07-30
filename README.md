@@ -368,7 +368,19 @@ Votre programme doit lire deux entiers, compris entre 1 et 6, la valeur de chaqu
 > Sortie => Taxe spéciale ! 36
 
 ```c
+#include <stdio.h>
 
+int main(){
+    int de1,de2;
+    scanf("%d %d", &de1, &de2);
+    
+    if (de1+de2 >= 10){
+        printf("Taxe spéciale !\n36");
+    }else {
+        printf("Taxe régulière\n%d", (de1+de2)*2);
+    }
+    return 0;
+}
 ```
 
 ## S2.6 - les Tableaux
