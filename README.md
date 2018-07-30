@@ -434,6 +434,55 @@ int main(){
 }
 ```
 
+### 5. Votre mission : tarif et age
+L'auberge dans laquelle vous vous arrêtez pour la nuit adapte ses prix en fonction de l'âge du client et du poids de ses bagages. Les règles ne vous étant pas très claires, vous décidez d'écrire un petit programme qui vous permettra facilement, à vous et à vos compagnons de voyage, de connaître le prix d'une nuit.
+
+Une chambre ne coûte rien si on a 60 ans (l'âge de l'aubergiste !) et 5 euros si on a strictement moins de 10 ans. Pour les autres personnes c'est 30 euros plus un supplément de 10 euros si on a au moins 20 kilos de bagages.
+
+> Entrée => Votre programme doit lire deux entiers, l'âge et le poids des bagages de la personne : 22 25
+
+> Sortie => Votre programme doit afficher le prix, sous la forme d'un entier : 40
+
+```c
+#include <stdio.h>
+
+int main(){
+    int age, poids, prix;
+    scanf("%d %d", &age, &poids);
+    
+    if (age == 60){
+        prix = 0;
+    } else if (age < 10){
+        prix = 5;
+    } else {
+        prix = 30;
+        if (poids >=20){
+            prix = prix + 10;
+        }
+    }
+    printf("%d", prix);
+    return 0;
+}
+```
+### 6. Votre mission : dans la forêt
+Alors que vous traversez une forêt vous ne pouvez vous empêcher d'admirer la végétation autour de vous et notamment les nombreuses espèces d'arbres. Malgré votre intérêt, vous êtes très mauvais botaniste et avez beaucoup de mal à identifier les différents arbres. Une personne que vous croisez vous donne quelques indications et vous décidez d'écrire un programme qui vous donnera le nom de l'arbre en fonction de ses caractéristiques.
+
+Il existe 4 types d'arbres :
+
+le "Tinuviel" fait moins de 5 mètres de haut et ses feuilles sont composées de plus de 8 folioles
+le "Calaelen" fait plus de 10 mètres de haut et ses feuilles sont composées de plus 10 folioles
+le "Falarion" fait moins de 8 mètres de haut et ses feuilles sont composées de moins de 5 folioles
+le "Dorthonion" fait plus de 12 mètres de haut et ses feuilles sont composées de moins de 7 folioles
+Votre programme lira deux entiers, la hauteur et le nombre de folioles de l'arbre, et affichera le nom de l'arbre correspondant. Toutes les inégalités sont à prendre au sens large, c'est-à-dire que "moins" signifie "moins ou égal" ou et "plus" signifie "plus ou égal".
+
+> Entrée => 12 12
+
+> Sortie => Calaelen
+
+```c
+
+```
+
 ## S2.6 - les Tableaux
 
 ## Votre mission : tableau et ingrédients
