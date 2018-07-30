@@ -545,10 +545,9 @@ Vous avez la possibilité de peser chacun des wagons individuellement. Vous aure
 
 Votre programme doit déterminer quel poids ajouter ou retirer à chaque wagon, pour qu'ils transportent toutes ensuite le même poids, et ce sans modifier le poids total transporté par l'ensemble du train.
 
-Entrée 
-L'entrée commence par un entier nbWagons (nbWagons <= 50) : le nombre de wagons du train. Les nbWagons lignes suivantes décrivent chacunes des wagons par un nombre décimal : le poids transporté initialement.
-Sortie
-Vous devez afficher nbWagons nombres décimaux (avec 1 chiffre après la virgule) sur la sortie : le poids à ajouter à chaque wagon (ce qui revient à en retirer si ce nombre est négatif), dans le même ordre que celui de l'entrée, avec 1 seul chiffre après la virgule.
+Entrée : L'entrée commence par un entier nbWagons (nbWagons <= 50) : le nombre de wagons du train. Les nbWagons lignes suivantes décrivent chacunes des wagons par un nombre décimal : le poids transporté initialement.
+
+Sortie : Vous devez afficher nbWagons nombres décimaux (avec 1 chiffre après la virgule) sur la sortie : le poids à ajouter à chaque wagon (ce qui revient à en retirer si ce nombre est négatif), dans le même ordre que celui de l'entrée, avec 1 seul chiffre après la virgule.
 
 ### Exemple
 Dans cet exemple, on a 5 wagons avec des poids différents. La sortie montre qu'on modifie tous les wagons pour qu'ils transportent chacun un poids de 22.0, soit un total de 110.0 pour le train, comme au départ. On enlève donc 18.0 pour le premier wagon, on ajoute 10.0 pour le deuxième, on ajoute 2.0 pour le troisième etc...
@@ -556,6 +555,59 @@ Dans cet exemple, on a 5 wagons avec des poids différents. La sortie montre qu'
 > entrée : 5 40.0 12.0 20.0 5.0 33.0
 
 > sortie : -18.0 10.0 2.0 17.0 -11.0
+
+```c
+```
+
+### 2. Votre mission : prix au kilo
+Vous partez faire des courses pour une délicieuse recette et voulez prendre l'argent dont vous avez besoin pour acheter les ingrédients. Heureusement vous savez à l'avance le prix au Kg de chaque ingrédient et la quantité exacte dont vous avez besoin pour chaque ingrédient.
+
+Le programme lira dans l'entrée le nombre d'ingrédients (au MAXIMUM 10), puis pour chaque ingrédient le prix au Kg. Enfin, pour chaque ingrédient le poids nécessaire pour la recette.
+
+Votre programme devra calculer le coût total de ces achats, l'afficher avec 6 chiffres après la virgule.
+
+### Exemple
+Il y a 4 ingrédients et ils ont tous un prix au kilo différent : 9.90 5.50 12.0 et 15.0. Vous devez prendre 250 grammes du premier, 1.5Kg du deuxième, 300 grammes du troisième et 1Kg du quatrième. Cela va coûter 29.325000 euros exactement.
+> entrée : 4
+9.90 5.50 12.0 15.0
+0.250 1.5 0.300 1.0
+
+> sortie : 29.325000
+
+```c
+```
+
+### 3. Votre mission : villes et villages
+Vous voulez savoir combien il y a de villes de plus de 10 000 habitants dans une certaine région.
+
+Ce que doit faire votre programme : on vous donne le nombre d'habitants d'un certain nombre de lieux d'une région. Une ville étant un lieu dont la population est strictement supérieure à 10000 habitants, déterminez combien de lieux sont des villes.
+
+> Entrée : Votre programme doit lire un premier entier en entrée: le nombre de lieux de la région. Il doit ensuite lire, pour chaque lieu, un entier donnant le nombre de gens qui y habitent.
+6
+1000
+5000
+15000
+4780
+0
+23590
+
+> Sortie : Votre programme doit alors afficher le nombre de villes.
+2
+
+```c
+```
+
+### 4. Votre missions : boucles imbriquées
+Réalisez un programme qui affiche à l'écran un carré de n x n étoiles, l'entier n étant donné en entrée.
+
+> Entrée: 5
+
+> Sortie:
+*****
+*****
+*****
+*****
+*****
 
 ```c
 ```
