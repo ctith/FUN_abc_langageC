@@ -300,7 +300,7 @@ int main(){
 
 ## S2.5 - conditions, opérateur de test et logique
 
-## Votre mission : covoiturage
+## 1. Votre mission : covoiturage
 Pour partager les coûts de mon trajet en voiture, je propose une annonce sur un site de covoiturage.
 
 Si j’ai 0 passager, le site de covoiturage ne me facture rien et je vais payer la totalité des coûts.
@@ -331,6 +331,44 @@ int main(){
     printf("%.2lf", coutReel);
     return 0;
 }
+```
+
+## 2. Votre mission : tarifs dégressifs
+L'auberge dans laquelle vous avez prévu de passer la nuit ce soir propose des tarifs très intéressants, pour peu que l'on n'arrive pas trop tard. En effet, plus on arrive tôt moins on devra payer. Vous essayez de construire un programme vous donnant directement le prix à payer en fonction de votre heure d'arrivée.
+
+Votre programme lira un entier, l'heure d'arrivée, qui sera compris entre 0 et 12 inclus (soit midi à minuit). Le prix de base est de 10 euros plus 5 euros pour toute heure après midi. Il ne peut cependant pas dépasser 53 euros. Votre programme devra afficher le prix à payer correspondant à l'heure d'arrivée donnée.
+
+> Entrée => 7
+
+> Sortie => 45
+
+```c
+#include <stdio.h>
+int main() {
+    int heureArrivee = 0;
+    scanf("%d", &heureArrivee);
+    int total = 10+5*heureArrivee; // car l'heure d'arrivée est entre midi et minuit dans l'énoncé
+    int totalDepasse53 = total > 53;
+    if(totalDepasse53){
+        printf("53");
+    }else{
+        printf("%d", total);
+    }
+    return 0;
+}
+```
+
+## 3. Votre mission : ponts et taxes
+Vous arrivez devant un pont que vous devez absolument emprunter pour arriver avant la nuit au village situé de l'autre côté de la rivière. Cependant, la traversée du pont n'est pas gratuite et le tarif dépend de votre chance au jeu. En effet, le gardien vous demande de lancer deux dés et le prix dépendra des valeurs que vous obtiendrez. Vous décidez d'écrire un programme pour vérifier qu'il applique bien le bon tarif.
+
+Votre programme doit lire deux entiers, compris entre 1 et 6, la valeur de chaque dé. Si la somme est supérieure ou égale à 10, alors vous devez payer une taxe spéciale (36 pièces). Sinon, vous payez deux fois la somme des valeurs des deux dés. Votre programme devra afficher selon le cas le texte « Taxe spéciale ! » ou bien « Taxe régulière », puis la somme à payer (sans indiquer l'unité).
+
+> Entrée => 5 6
+
+> Sortie => Taxe spéciale ! 36
+
+```c
+
 ```
 
 ## S2.6 - les Tableaux
