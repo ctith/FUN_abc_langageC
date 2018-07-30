@@ -298,7 +298,42 @@ int main(){
 }
 ```
 
-## S2.5 - les Tableaux
+## S2.5 - conditions, opérateur de test et logique
+
+## Votre mission : covoiturage
+Pour partager les coûts de mon trajet en voiture, je propose une annonce sur un site de covoiturage.
+
+Si j’ai 0 passager, le site de covoiturage ne me facture rien et je vais payer la totalité des coûts.
+Si j’ai 1, 2 ou 3 passagers, le site de covoiturage ajoute 1 euro de frais (à ajouter au coût du trajet) et on divise le coût entre nous (moi compris).
+Je veux écrire un programme qui calcule le coût qu’il me reste à payer.
+
+> Entrée => En entrée du programme nous aurons d’abord le nombre de passagers (un nombre entier) puis le coût total du trajet (un nombre à virgule) : 0 23.9
+
+> Sortie => En sortie, le coût qu’il me reste à payer (un nombre à virgule) avec 2 chiffres après la virgule : 23.90
+
+```c
+#include <stdio.h>
+
+int main(){
+    int nbPassager = 0;
+    double coutTotal = 0.0;
+    double coutReel = 0.0;
+    
+    scanf("%d %lf", &nbPassager, &coutTotal);
+    
+    if (nbPassager == 0){
+        coutReel = coutTotal;
+    } else {
+        nbPassager = (double) nbPassager;
+        coutReel = (coutTotal + 1) / (nbPassager + 1);
+    }
+    
+    printf("%.2lf", coutReel);
+    return 0;
+}
+```
+
+## S2.6 - les Tableaux
 
 ## Votre mission : tableau et ingrédients
 Vous avez une superbe recette de cuisine avec 10 ingrédients. Mais vous ne vous souvenez jamais quelle quantité de chaque ingrédient il faut mettre pour réussir cette fameuse recette !
