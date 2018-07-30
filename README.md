@@ -1,5 +1,7 @@
 # MOOC FUN : abc du langage C
 
+# Semaine 1 : Les fondamentaux pour écrire en langage C
+
 ## S1.3 - Boucles et répétitions
 ```c
 +-----------------------+
@@ -128,6 +130,7 @@ int main() {
 }
 ```
 
+# Semaine 2 : Vos premiers programmes en langage C
 ## S2.2 - Nombre à virgule
 ### Votre mission
 Vous décidez de partir pour quelques jours de randonnée à la montagne avec un ami américain. Le problème est que toutes les distances indiquées sur les panneaux sont en kilomètres et non en miles (pour votre ami américain). Vous aimeriez être en mesure de faire les conversions automatiquement pour l'aider à se rendre compte des distances.
@@ -531,4 +534,28 @@ int main() {
     printf("%d", tableau[numeroDeCase]);
     return 0;
 }
+```
+# Semaine 3 : Les fonctions et les chaînes de caractère
+## S3.1 - la boucle FOR et les structures imbriquées
+
+### 1. Votre mission : répartition du poids
+Vous êtes responsable d'un convoi de marchandises composé de plusieurs wagons. Vous faites démarrer le train et après seulement quelques minutes vous vous rendez compte que certains wagons sont surchargés et appuient beaucoup trop sur les rails alors que d'autres sont très légers et ont les roues qui volent. Vous décidez donc d'arrêter le train et de mieux répartir le poids, afin que tous les wagons aient exactement le même poids. Pour cela vous écrivez rapidement un programme qui vous aide dans la répartition du poids des wagons.
+
+Vous avez la possibilité de peser chacun des wagons individuellement. Vous aurez donc pour chaque wagon le poids des marchandises qu'il transporte.
+
+Votre programme doit déterminer quel poids ajouter ou retirer à chaque wagon, pour qu'ils transportent toutes ensuite le même poids, et ce sans modifier le poids total transporté par l'ensemble du train.
+
+Entrée 
+L'entrée commence par un entier nbWagons (nbWagons <= 50) : le nombre de wagons du train. Les nbWagons lignes suivantes décrivent chacunes des wagons par un nombre décimal : le poids transporté initialement.
+Sortie
+Vous devez afficher nbWagons nombres décimaux (avec 1 chiffre après la virgule) sur la sortie : le poids à ajouter à chaque wagon (ce qui revient à en retirer si ce nombre est négatif), dans le même ordre que celui de l'entrée, avec 1 seul chiffre après la virgule.
+
+### Exemple
+Dans cet exemple, on a 5 wagons avec des poids différents. La sortie montre qu'on modifie tous les wagons pour qu'ils transportent chacun un poids de 22.0, soit un total de 110.0 pour le train, comme au départ. On enlève donc 18.0 pour le premier wagon, on ajoute 10.0 pour le deuxième, on ajoute 2.0 pour le troisième etc...
+
+> entrée : 5 40.0 12.0 20.0 5.0 33.0
+
+> sortie : -18.0 10.0 2.0 17.0 -11.0
+
+```c
 ```
