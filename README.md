@@ -480,7 +480,23 @@ Votre programme lira deux entiers, la hauteur et le nombre de folioles de l'arbr
 > Sortie => Calaelen
 
 ```c
+#include <stdio.h>
 
+int main(){
+    int hauteur, nbfoliole;
+    scanf("%d %d", &hauteur, &nbfoliole);
+    
+    if (hauteur <= 5 && nbfoliole >= 8)
+        printf("Tinuviel");
+    if (hauteur >= 10 && nbfoliole >= 10)
+        printf("Calaelen");
+    if (hauteur <= 8 && nbfoliole <= 5)
+        printf("Falarion");
+    if (hauteur >= 12 && nbfoliole <= 7)
+        printf("Dorthonion");
+    
+    return 0;
+}
 ```
 
 ## S2.6 - les Tableaux
