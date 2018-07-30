@@ -383,6 +383,57 @@ int main(){
 }
 ```
 
+## 4. Votre mission : concours de tir à la corde
+Un championnat de tir à la corde est organisé. Vous décidez alors de vous engager dans les paris qui se font sur les deux équipes qui concourent. Les deux équipes vont tirer une corde le plus fort possible, chacune de leur côté; jusqu’à ce qu’une équipe dépasse une ligne délimitée au sol. C’est à ce moment que l’équipe qui a tiré “le moins fort” a perdu, et l’autre a gagné !
+
+Ce championnat oppose deux équipes, contenant chacune autant de joueurs. Pour donner de l'allure et pimenter les paris, au début du championnat, tous les joueurs sont présentés, avec leur poids, avant d'aller tenir leur côté de la corde. Il est d'abord présenté un membre de la première équipe, puis de la deuxième, puis de la première, puis de la deuxième etc. jusqu'à ce que tous les joueurs soient passés. Afin de vous faire un premier pronostic, vous calculez le poids total de chaque équipe, avec votre programme.
+
+Votre programme devra lire un premier entier : le nombre de membres nbMembres qui constituent une équipe. Ensuite, il devra lire les poids (un entier représentant des kilogrammes), au total nbMembres × 2, sachant que le premier poids est celui d'un joueur de la 1re équipe, le deuxième poids celui d'un joueur de la 2e équipe, le troisième la 1re équipe, le quatrième la 2e équipe, etc.
+Après avoir calculé le poids total de chaque équipe, vous devrez afficher le texte « L'équipe X a un avantage » (en remplaçant X par la valeur 1 ou 2), en considérant qu'une équipe est avantagée si elle a un poids total supérieur à celui de l'autre.
+
+Vous afficherez ensuite le texte « Poids total pour l'équipe 1 : » suivi du poids de l'équipe 1, puis « Poids total pour l'équipe 2 : » suivi du poids de l'équipe 2 (voir l'exemple ci-dessous).
+
+On vous garantit que les deux équipes n'auront pas le même poids total.
+
+### Exemple
+Chaque équipe est composée de trois joueurs. Ceux de la première pèsent 40, 50 et 60 kg, tandis que ceux de la seconde font 80, 50 et 10 kg. Cela fait 150 kg opposés à 140 kg.
+
+> Entrée => 3 40 80 50 50 60 10
+
+> Sortie => L'équipe 1 a un avantage
+Poids total pour l'équipe 1 : 150
+Poids total pour l'équipe 2 : 140
+
+```c
+#include <stdio.h>
+int main(){
+    int nbMembres;
+    int poids1;
+    int poids2;
+    int sommePoids1 = 0;
+    int sommePoids2 = 0;
+    
+    scanf("%d", &nbMembres);
+    
+    for(int i=0; i<nbMembres; i++){
+    	scanf("%d", &poids1);
+    	scanf("%d", &poids2);
+    	sommePoids1 = sommePoids1 + poids1;
+    	sommePoids2 = sommePoids2 + poids2;
+    }
+    
+    if(sommePoids1>sommePoids2){
+        printf("L'équipe 1 a un avantage\n");
+    } else {
+        printf("L'équipe 2 a un avantage\n");
+    }
+    printf("Poids total pour l'équipe 1 : %d\n", sommePoids1);
+    printf("Poids total pour l'équipe 2 : %d\n", sommePoids2);
+    
+    return 0;
+}
+```
+
 ## S2.6 - les Tableaux
 
 ## Votre mission : tableau et ingrédients
