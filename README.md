@@ -719,5 +719,105 @@ Rien à signaler
 
 ```c
 ```
+## S3.3 - les chaînes de caractères
 
+### 1. Votre mission : surveillance d'une expérience de chimie
+Réalisez un programme qui répète un mot. Le nombre de répétitions et le mot seront donnés en entrée du programme.
 
+#### Exemple 1
+> Entrée: 2 bonjour
+
+> Sortie: bonjour
+bonjour
+
+#### Exemple 2
+> Entrée: 4 truc
+
+> Sortie: truc
+truc
+truc
+truc
+
+```c
+```
+
+### 2. Votre mission : inversion prénom/nom
+Au sein de la bibliothèque municipale, toutes les personnes souhaitant emprunter un livre doivent s'enregistrer en indiquant leurs noms et prénoms sur une fiche individuelle conservée à l'accueil.
+
+L'habitude veut qu'ils écrivent d'abord leur nom puis leur prénom, ce qui permet de classer les fiches par ordre alphabétique et permet de rapidement retrouver la fiche qu'on cherche.
+
+Malheureusement, depuis un mois, dans toutes les nouvelles fiches créées les personnes ont indiqué en premier leur prénom puis leur nom !
+
+- Contraintes: Chaque nom et prénom est au plus de longueur 100 et ne contient pas d'espace.
+- Entrée : Sur la première ligne, un entier nbPersonnes : le nombre total de personnes concernées. Sur chacune des nbPersonnes lignes suivantes, un prénom et un nom, séparés par un espace.
+- Sortie: Pour chaque personne, vous devez écrire sur la même ligne son nom, puis son prénom, séparés par un espace.
+
+Votre travail consiste à lire ces couples de prénoms et noms et à les afficher dans le bon ordre.
+
+#### Exemple 1
+> Entrée: 4
+Alan Turing
+Ada Lovelace
+Donald Knuth
+Claude Shannon
+
+> Sortie: Turing Alan 
+Lovelace Ada 
+Knuth Donald
+Shannon Claude
+
+#### Exemple 2
+> Entrée: 4 truc
+
+> Sortie: truc
+truc
+truc
+truc
+
+```c
+```
+
+### 3. Votre mission : inscription étudiants
+Comme chaque année, lors de la rentrée universitaire en spécialité mathématique, de nombreux étudiants viennent s’inscrire à la bibliothèque et une longue file d’attente se forme. Afin d’essayer d'accélérer les choses, les fiches d’inscription de tous les étudiants ont déjà été préparées et ils n’ont plus qu’à les récupérer. On a trouvé une astuce mathématique pour faire deux files d'attente!
+
+Deux personnes sont en charge de distribuer les fiches : la première s’occupe des étudiants dont le nom contient un nombre pair de lettres, la seconde personne des étudiants dont le nom contient un nombre impair de lettres. Cela forme deux files d'attente !
+
+Quand un nouvel étudiant arrive, il donne son nom et il faut lui indiquer quelle personne il doit aller voir.
+
+- Contraintes : Les noms des étudiants font moins de 50 caractères de long.
+- Entrée : Un nom d’étudiant.
+- Sortie : Un entier, 1 ou 2 selon que l’étudiant doit aller voir la première (nombre de lettre pair) ou la seconde personne (nombre de lettres impair).
+
+#### Exemple 1
+> Entrée: Sharrock
+
+> Sortie: 1
+
+#### Exemple 2
+> Entrée: Obama
+
+> Sortie: 2
+
+```c
+```
+
+### 4. Votre mission : le mot le + long
+Vous devez trouver la taille (en nombre de lettres) du plus grand mot dans un texte simplifié. La simplification consiste à enlever tous les caractères spéciaux, les accents et la ponctuation, il ne reste que les mots.
+
+Pour vous aider, vous réalisez un programme qui prend en entrée le nombre de mots du texte, suivi de tous les mots de ce texte. Dans la sortie vous affichez la taille du plus grand mot trouvé !
+
+#### Exemple 1
+> Entrée: 17
+Ceci est un texte d exemple simplifie
+nous devons trouver la taille du mot le plus long
+
+> Sortie: 9
+
+#### Exemple 2
+> Entrée: 7
+la nuit tous les chats sont gris
+
+> Sortie: 5
+
+```c
+```
