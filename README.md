@@ -130,6 +130,8 @@ int main() {
 }
 ```
 
+---------------------------------
+
 # Semaine 2 : Vos premiers programmes en langage C
 ## S2.2 - Nombre à virgule
 ### Votre mission
@@ -535,7 +537,10 @@ int main() {
     return 0;
 }
 ```
+
+-----------------------------
 # Semaine 3 : Les fonctions et les chaînes de caractère
+
 ## S3.1 - la boucle FOR et les structures imbriquées
 
 ### 1. Votre mission : répartition du poids
@@ -719,6 +724,7 @@ Rien à signaler
 
 ```c
 ```
+
 ## S3.3 - les chaînes de caractères
 
 ### 1. Votre mission : surveillance d'une expérience de chimie
@@ -818,6 +824,59 @@ nous devons trouver la taille du mot le plus long
 la nuit tous les chats sont gris
 
 > Sortie: 5
+
+```c
+```
+
+## S3.4 - les fonctions
+
+### 1. Votre mission : convertisseur intelligent
+Écrivez un programme qui convertit des valeurs du système métrique en valeurs du système de mesure américain. On fournit des mesures à votre programme, en mètres, grammes ou degrés Celsius et vous devez les convertir respectivement en pieds, livres et degrés Fahrenheit.
+
+Voici les règles de conversion à utiliser :
+
+1 pied = 0,3048 mètres ;
+1 gramme = 0,002205 livres ;
+température en degrés Fahrenheit = 32 + 1,8 × température en degrés Celsius.
+On vous donne sur la première ligne le nombre de conversions à effectuer, puis sur les lignes suivantes la valeur à convertir, et son unité : m, g ou c (avec un espace entre les deux).
+
+Affichez en sortie les valeurs converties avec 6 chiffres après la virgule, suivies d'un espace et de leur unité : p, l ou f.
+
+Vous pouvez écrire des fonctions pour résoudre cet exercice, mais ce n'est pas obligatoire. Par contre vous devrez utiliser l'opération de test avec des caractères, par exemple :
+```c
+char lettre = 'a';
+if(lettre == 'a'){
+...}
+```
+
+#### Exemple
+L'entrée indique qu'il y a quatre valeurs à convertir. La première est 12,3 mètres, ce qui, une fois converti, donne approximativement 40,354331 pieds. La deuxième est 1245,243 grammes, soit environ 2,745761 livres, la troisième est 37,2 degrés Celsius, soit 98,96 degrés Farenheit, et la quatrième est 23 grammes, soit 0,050715 livres.
+
+> Entrée: 4
+12.3 m
+1245.243 g
+37.2 c
+23 g
+
+> Sortie: 40.354331 p
+2.745761 l
+98.960000 f
+0.050715 l
+
+```c
+```
+
+### 2. Votre mission : le plus petit entier
+Vous devez trouver le plus petit nombre entier dans une liste.
+
+Écrivez une fonction nommée min, qui prend deux entiers en entrée et retourne le plus petit. Cette fonction utilisera un if avec un test "plus petit que".
+
+Pour démontrer l'utilisation de cette fonction, vous lirez un premier nombre entier nbValeurs qui donne le nombre de valeurs à lire. Vous lirez ensuite ces nbValeurs valeurs et utiliserez votre fonction pour conserver uniquement le plus petit des entiers lus, puis vous l'afficherez à la fin.
+
+> Entrée: 10
+4 3 6 2 6 8 9 8 5 4
+
+> Sortie: 2
 
 ```c
 ```
