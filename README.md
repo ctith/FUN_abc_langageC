@@ -611,3 +611,113 @@ Réalisez un programme qui affiche à l'écran un carré de n x n étoiles, l'en
 
 ```c
 ```
+
+## S3.2 - la boucle WHILE
+
+### 1. Votre mission : dépenses d'une université
+Une grande partie du travail de l'administration d'une université, en plus de gérer les enseignants, les chercheurs, les étudiants, les cours… est de veiller au bon fonctionnement de l'université et en particulier à ce que les comptes soient bien tenus. Il faut, une fois par an, faire un bilan annuel des dépenses.
+
+Toutes les dépenses de l'année ont été enregistrées et classées dans une multitude de dossiers et il faut maintenant calculer la somme de toutes ces dépenses. Mais personne ne sait exactement combien de dépenses différentes ont été effectuées durant l'année écoulée !
+
+Votre programme devra lire une suite d'entiers positifs et afficher leur somme. On ne sait pas combien il y aura d'entiers, mais la suite se termine toujours par la valeur -1 (qui n'est pas une dépense, juste un marqueur de fin).
+
+> Entrée: 1000 2000 500 -1
+
+> Sortie: 3500
+
+```c
+```
+
+### 2. Votre mission : contrôle d'une épidémie
+Afin de pouvoir mieux combattre les différentes épidémies, parfois très graves, qui se développent régulièrement dans une région, le département de médecine d'une université a lancé une grande étude. En particulier, les chercheurs s'intéressent à la vitesse de propagation d'une épidémie et donc à la vitesse à laquelle des mesures sanitaires doivent êtres mises en place.
+
+Votre programme doit d'abord lire un entier, la population totale de la région. Sachant qu'une personne était malade au jour 1 et que chaque malade contamine deux nouvelles personnes le jour suivant (et chacun des jours qui suivent), vous devez calculer à partir de quel jour toute la population de la région sera malade.
+
+#### Exemple 1
+Pour une population totale de 3 habitants, le jour 1 une personne est malade. Le jour suivant elle contamine 2 nouvelles personnes donc il y a au total 3 contaminés. C'est la totalité de la population donc il faut 2 jours pour contaminer la totalité de la population.
+
+> Entrée: 1000 2000 500 -1
+
+> Sortie: 3500
+
+#### Exemple 2
+Pour une population totale de 10. On a 1 malade le premier jour, donc 2 nouveaux malades le second jour, soit un total de 3 malades. On a donc 6 nouveaux malades au troisième jour, soit un total de 9 malades. On a donc 18 nouveaux malades au quatrième jour, soit etc...
+
+> Entrée: 10
+
+> Sortie: 4
+
+```c
+```
+
+### 3. Votre mission : c'est plus, c'est moins
+Dans une cité commerçante, il est important que les habitants soient forts en calcul mental afin de pouvoir négocier leurs prix et choisir les meilleurs produits sans se faire avoir. Le département de pédagogie de l'université a donc été sollicité afin de mettre au point des exercices stimulants pour les enfants, qui vont les inciter à travailler leur calcul mental.
+
+Les chercheurs vous demandent de mettre au point un programme capable de faire jouer de manière automatisée un enfant au jeu du « c'est plus, c'est moins » : l'enfant doit deviner un nombre secret en faisant des propositions, et on lui répond chaque fois par « c'est plus » ou « c'est moins », jusqu'à ce qu'il ait trouvé le bon nombre.
+
+L'objectif est bien sûr pour les enfants de trouver le bon nombre le plus rapidement possible !
+
+Ce que doit faire votre programme :
+
+Votre programme doit d'abord lire un entier, le nombre que l'enfant devra trouver.
+
+Ensuite, il devra lire les propositions du joueur, et afficher à chaque fois le texte « c'est plus » (l'enfant a proposé un nombre trop petit) ou « c'est moins » (l'enfant a proposé un nombre trop grand) selon les cas, et recommencer tant que l'enfant n'a pas trouvé le bon nombre.
+
+À la fin, il faudra afficher le texte « Nombre d'essais nécessaires : » puis, à la ligne en dessous, le nombre d'essais qui ont été nécessaires.
+
+On vous garantit que l'enfant finira par trouver la bonne valeur !
+
+#### Exemple 1
+
+> Entrée: 5 
+1 2 3 4 5
+
+> Sortie: c'est plus
+c'est plus
+c'est plus
+c'est plus
+Nombre d'essais nécessaires :
+5
+
+#### Exemple 2
+> Entrée: -50
+-80
+-50
+
+> Sortie: c'est plus
+Nombre d'essais nécessaires :
+2
+
+```c
+```
+
+### 4. Votre mission : surveillance d'une expérience de chimie
+Les chimistes de l'université ont mis au point un nouveau procédé de fabrication d'un médicament qui permet une cicatrisation très rapide des blessures. Ce procédé est cependant très long et nécessite une surveillance de tous les instants de la préparation en train de chauffer, et ce parfois pendant des heures. Confier cette tâche à un étudiant n'est pas possible, ils s'endorment toujours ou ne font pas attention… et cela risque alors d'exploser !
+
+Un dispositif automatique de surveillance de la préparation serait donc intéressant. Celui-ci surveillerait la température toutes les 15 secondes, et si celle-ci devient anormale alors une alarme devrait sonner, afin de prévenir tout le monde.
+
+Votre programme devra lire deux entiers : la température minimum et maximum autorisées. Les entiers suivants seront les différentes températures relevées au cours du temps. On consière qu'une valeur de -999 veut dire "fin du relevé des températures"
+
+Si les températures relevées restent dans le bon intervalle (elles peuvent être aussi égales aux valeurs min ou max), votre programme devra écrire le texte « Rien à signaler », mais dès que la température n'est pas bonne il doit écrire le texte « Alerte !! » et s'arrêter.
+
+#### Exemple 1
+> Entrée: 10 20
+15 10 20 0 15 -999
+
+> Sortie: Rien à signaler
+Rien à signaler
+Rien à signaler
+Alerte !!
+
+#### Exemple 2
+> Entrée: 0 100
+15 50 75 -999
+
+> Sortie: Rien à signaler
+Rien à signaler
+Rien à signaler
+
+```c
+```
+
+
